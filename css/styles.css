@@ -253,6 +253,7 @@ button:hover {
 .front-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 354px;
   padding: 0 30px 80px;
   gap: 40px;
@@ -261,18 +262,17 @@ button:hover {
 .why-front {
   display: flex;
   flex-direction: column;
-  align-self: center;
   width: 60%;
   gap: 10px;
-}
-
-.why-front > h2 {
-  font-size: 26px;
-  line-height: 100%;
   text-align: center;
 }
 
-.why-front > p {
+h2 {
+  font-size: 26px;
+  line-height: 100%;
+}
+
+p {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
@@ -280,10 +280,404 @@ button:hover {
 }
 
 .bullets-list {
-  width: 964px;
-  height: 145px;
-  padding-right: 34px;
-  padding-left: 34px;
+  padding: 0 34px;
   display: flex;
-  justify-content: space-between;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 145px;
+  padding: 26px 0;
+  gap: 24px;
+}
+
+.bullet-top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bullet > span {
+  font-weight: 500;
+  text-align: center;
+}
+
+.bullet-circle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #ecf2ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.bullet-inner {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #0066ff;
+}
+
+.right-wing,
+.left-wing {
+  width: 83px;
+  height: 1px;
+  background-color: #e6e9f2;
+}
+
+#right-wing,
+#left-wing {
+  width: 83px;
+}
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 120px 0;
+  gap: 60px;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.plansFeaturesList {
+  display: flex;
+  padding: 0 30px;
+  gap: 30px;
+}
+
+.pricing-table {
+  display: flex;
+  gap: 30px;
+}
+
+.plan {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+  gap: 50px;
+  border: 1px solid transparent;
+}
+
+.plan:hover {
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 10px 20px 0px #00000026;
+}
+
+.planHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.planHeader > p {
+  text-align: left;
+}
+
+.planPrice {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.fiveNine {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.mo {
+  padding-bottom: 9px;
+  font-weight: 510;
+  font-size: 20px;
+  color: #677788;
+}
+
+.divider {
+  height: 1px;
+  background-color: #8d8d8d;
+}
+
+.planFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.planFooter > span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #677788;
+}
+
+.planFeatures {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowOne,
+.rowTwo {
+  display: flex;
+  gap: 10px;
+}
+
+.planFeatureItem {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ffffff;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.planFeatures img {
+  width: 50px;
+}
+
+.itemContent > p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.titleFeatureIcon {
+  display: flex;
+  gap: 10px;
+}
+
+button.sketchIcon {
+  padding: 4px 10px;
+  border-radius: 15px;
+  background: #01c9a7;
+  border: 1px solid #01c9a7;
+  color: #ffffff;
+}
+
+button.sketchIcon:hover {
+  color: #01c9a7;
+  background-color: #ffffff;
+}
+
+.hireUs {
+  display: flex;
+  height: 708px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: #20335b;
+}
+
+.leftPartHire {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+  gap: 60px;
+}
+
+.hireUsTop {
+  color: #ffffff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hireUsTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.hireTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hireTitle > p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #677788;
+  text-align: left;
+}
+
+#divider {
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.italicized {
+  color: #ffffff;
+  font-style: italic;
+  line-height: 24px;
+  text-align: left;
+}
+
+.hireUsBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  gap: 4px;
+}
+
+.person h4 {
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.person p {
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
+}
+
+.personsImage {
+  display: flex;
+  gap: 30px;
+}
+
+.personsImage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.rightPartHire {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.form-Hire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  gap: 37px;
+  background: #ffffff;
+}
+
+.formData {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formData h4 {
+  line-height: 24px;
+}
+
+.formGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e6e8f2;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #828282;
+}
+
+select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #e6e8f2;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e6e8f2;
+  resize: none;
+}
+
+.marketing {
+  display: flex;
+  gap: 16px;
+}
+
+.marketing label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.privacyPolicy {
+  display: flex;
+  gap: 28px;
+}
+
+.privacyPolicy a {
+  font-weight: 700;
+  line-height: 22px;
+  text-underline-position: under;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+.checkInput {
+  padding-top: 4px;
+}
+
+#checkbox {
+  appearance: none;
+  width: 25px;
+  height: 24px;
+  border: 1px solid #e6e8f2;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  border: 1px solid #2476ff;
+  color: #ffffff;
+  width: 125px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: #2476ff;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #2476ff;
 }
