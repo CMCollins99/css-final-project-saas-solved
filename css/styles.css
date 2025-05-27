@@ -52,7 +52,7 @@ body {
   display: none;
 }
 
-ul {
+.top-nav > ul {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -680,4 +680,126 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #ffffff;
   color: #2476ff;
+}
+
+footer {
+  max-width: 1024px;
+  height: 246px;
+  padding: 40px 30px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-footer {
+  width: 100px;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map,
+.phone {
+  display: flex;
+  gap: 9px;
+}
+
+.map > span {
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 100%;
+  color: #677788;
+}
+
+.iconFooter {
+  display: flex;
+  padding-top: 2px;
+  font-size: 12px;
+  color: #677788;
+}
+
+.phone a {
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.footerRight {
+  display: flex;
+  gap: 49px;
+}
+
+.footerTiles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerTiles h4 {
+  font-weight: 860;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.footerTiles ul {
+  list-style: none;
+}
+
+.footerUl-Nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerUl-Nav ul > li {
+  display: flex;
+  gap: 9px;
+}
+
+.footerUl-Nav ul > li > a {
+  font-size: 14px;
+}
+
+.weirdSpan {
+  align-items: center;
+}
+
+.weirdSpan > span {
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 510;
+  font-size: 8px;
+  line-height: 100%;
+  background-color: #2576ff;
+  border: 1px solid #2576ff;
+}
+
+.weirdSpan > span:hover {
+  background-color: #ffffff;
+  color: #2576ff;
+}
+
+.weirdSpan > span:hover a {
+  color: #2576ff;
+}
+
+.weirdSpan > span > a {
+  color: #ffffff;
+}
+
+ul li i {
+  color: #677788;
 }
