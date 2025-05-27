@@ -14,11 +14,6 @@ body {
   margin: 0 auto;
   padding: 0 30px;
 }
-/* div {
-  background: transparent;
-  border: 1px solid;
-} */
-/* static styles ^ */
 
 #topSection {
   background-image: url(/assets/bg/background-top.svg);
@@ -63,10 +58,6 @@ a {
   color: #677788;
 }
 
-a:hover {
-  color: #2476ff;
-}
-
 .buy-btn {
   border: 1px solid #2476ff;
   color: #ffffff;
@@ -75,13 +66,6 @@ a:hover {
   border-radius: 30px;
   background-color: #2476ff;
 }
-
-button:hover {
-  background-color: #ffffff;
-  color: #2476ff;
-}
-
-/* nav styles ^ */
 
 .top-content {
   display: flex;
@@ -117,6 +101,7 @@ button:hover {
   font-size: 14px;
   line-height: 100%;
   color: #677788;
+  text-align: left;
 }
 
 .top-actions {
@@ -126,22 +111,17 @@ button:hover {
   padding-top: 20px;
 }
 
-#play-btn {
+.play-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #2476ff;
   color: #ffffff;
-  width: 135px;
-  height: 43px;
+  width: 137px;
+  height: 48px;
   border-radius: 30px;
   background-color: #2476ff;
   gap: 8px;
-}
-
-#play-btn:hover {
-  background-color: #ffffff;
-  color: #2476ff;
 }
 
 .fa-circle-play {
@@ -181,6 +161,7 @@ button:hover {
 }
 
 .google-logo {
+  animation: google-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -191,6 +172,7 @@ button:hover {
 }
 
 .atlassian-logo {
+  animation: atlassian-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 80px;
   height: 80px;
@@ -201,6 +183,7 @@ button:hover {
 }
 
 .asana-logo {
+  animation: asana-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 80px;
   height: 80px;
@@ -211,6 +194,7 @@ button:hover {
 }
 
 .paypal-logo {
+  animation: paypal-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 80px;
   height: 80px;
@@ -221,6 +205,7 @@ button:hover {
 }
 
 .weave-logo {
+  animation: weave-move 2s linear 2s 1 normal none;
   position: relative;
   width: 80px;
   height: 80px;
@@ -231,6 +216,7 @@ button:hover {
 }
 
 .ads-logo {
+  animation: ads-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -241,6 +227,7 @@ button:hover {
 }
 
 .calendar-logo {
+  animation: calendar-move 2s linear 2s 1 normal none;
   position: absolute;
   width: 80px;
   height: 80px;
@@ -370,11 +357,6 @@ p {
   border: 1px solid transparent;
 }
 
-.plan:hover {
-  border: 1px solid #e2e2e2;
-  box-shadow: 0px 10px 20px 0px #00000026;
-}
-
 .planHeader {
   display: flex;
   flex-direction: column;
@@ -469,11 +451,6 @@ button.sketchIcon {
   color: #ffffff;
 }
 
-button.sketchIcon:hover {
-  color: #01c9a7;
-  background-color: #ffffff;
-}
-
 .hireUs {
   display: flex;
   height: 708px;
@@ -500,7 +477,7 @@ button.sketchIcon:hover {
   gap: 32px;
 }
 
-.hireUsTitle {
+.hireUsContainer {
   display: flex;
   flex-direction: column;
   gap: 34px;
@@ -513,12 +490,6 @@ button.sketchIcon:hover {
 }
 
 .hireTitle > p {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #677788;
   text-align: left;
 }
 
@@ -614,6 +585,8 @@ input::placeholder {
 }
 
 select {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   border-radius: 5px;
   padding: 10px;
@@ -621,6 +594,7 @@ select {
 }
 
 textarea {
+  font-family: Inter;
   width: 100%;
   height: 150px;
   padding: 10px;
@@ -634,7 +608,7 @@ textarea {
   gap: 16px;
 }
 
-.marketing label {
+.marketing .promotional {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -675,11 +649,6 @@ input[type="submit"] {
   height: 45px;
   border-radius: 30px;
   background-color: #2476ff;
-}
-
-input[type="submit"]:hover {
-  background-color: #ffffff;
-  color: #2476ff;
 }
 
 footer {
@@ -732,6 +701,7 @@ footer {
 }
 
 .phone a {
+  color: #2576ff;
   font-weight: 510;
   font-size: 14px;
   line-height: 100%;
@@ -739,6 +709,20 @@ footer {
 
 .footerRight {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 49px;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  gap: 49px;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
   gap: 49px;
 }
 
@@ -787,19 +771,527 @@ footer {
   border: 1px solid #2576ff;
 }
 
-.weirdSpan > span:hover {
-  background-color: #ffffff;
-  color: #2576ff;
-}
-
-.weirdSpan > span:hover a {
-  color: #2576ff;
-}
-
 .weirdSpan > span > a {
   color: #ffffff;
 }
 
 ul li i {
   color: #677788;
+}
+
+@media (min-width: 1023px) {
+  a:hover {
+    color: #2476ff;
+  }
+  button:hover {
+    background-color: #ffffff;
+    color: #2476ff;
+  }
+  .play-btn:hover {
+    background-color: #ffffff;
+    color: #2476ff;
+  }
+  .plan:hover {
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 10px 20px 0px #00000026;
+  }
+  button.sketchIcon:hover {
+    color: #01c9a7;
+    background-color: #ffffff;
+  }
+  input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #2476ff;
+  }
+  .weirdSpan > span:hover {
+    background-color: #ffffff;
+    color: #2576ff;
+  }
+  .weirdSpan > span:hover a {
+    color: #2576ff;
+  }
+}
+
+@media (max-width: 1023px) {
+  #topSection {
+    max-width: 1023px;
+    background-position: unset;
+    background-size: auto 531px;
+  }
+
+  .content {
+    max-width: 1023px;
+  }
+
+  nav.top-nav > ul,
+  nav > .buy-btn {
+    display: none;
+  }
+
+  .bars {
+    display: flex;
+    padding: 6px 14px;
+    gap: 30px;
+    color: #677788;
+    border: none;
+    background: none;
+  }
+
+  .fa-bars {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .top-content {
+    height: 664px;
+    flex-direction: column;
+    padding: 40px 30px 0;
+  }
+
+  .left-part {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title > p {
+    text-align: center;
+  }
+
+  .google-logo {
+    left: 110px;
+  }
+
+  .atlassian-logo {
+    left: 287px;
+  }
+
+  .asana-logo {
+    left: 533px;
+  }
+
+  .paypal-logo {
+    top: 99px;
+    left: 112px;
+  }
+
+  .weave-logo {
+    top: 99px;
+    left: 414px;
+  }
+
+  .ads-logo {
+    top: 209px;
+    left: 230px;
+  }
+
+  .calendar-logo {
+    top: 229px;
+    left: 517px;
+  }
+
+  .front-section {
+    padding-bottom: 80px;
+  }
+
+  .why-front {
+    width: 85%;
+  }
+
+  .bullets-list {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .right-wing,
+  .left-wing,
+  #right-wing,
+  #left-wing {
+    width: 58.5px;
+  }
+
+  .pricing-section {
+    padding: 0 0 60px 0;
+    gap: 60px;
+  }
+  .pricing-table {
+    flex-direction: column;
+  }
+
+  .plansFeaturesList {
+    padding: 0 44px;
+  }
+
+  .plan {
+    border: 1px solid #e2e2e2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .planHeader {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .planHeader .divider {
+    width: 100%;
+  }
+
+  .hireUs {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .leftPartHire {
+    flex-direction: row;
+    padding: 40px 30px 20px;
+  }
+
+  .hireUsTop {
+    flex: 2;
+  }
+
+  .hireUsBottom {
+    width: 192px;
+    gap: 30px;
+  }
+
+  .person {
+    padding: 0;
+  }
+
+  .rightPartHire {
+    padding: 30px;
+  }
+
+  .privacyPolicy a:nth-child(2) {
+    display: none;
+  }
+
+  footer {
+    height: 501px;
+    display: flex;
+    padding: 80px 30px 40px;
+  }
+
+  .footer-content {
+    gap: 40px;
+  }
+
+  .footerRight {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    flex: 2;
+    flex-wrap: wrap;
+  }
+
+  .topRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .bottomRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 49px;
+  }
+}
+
+@media (max-width: 767px) {
+  #topSection {
+    max-width: 767px;
+  }
+
+  .content {
+    min-width: 360px;
+    max-width: 767px;
+  }
+
+  .top-content {
+    height: 594px;
+    padding: 40px 16px 60px;
+    gap: 10px;
+  }
+
+  .left-part {
+    gap: 30px;
+  }
+
+  .title h1 {
+    font-size: 26px;
+  }
+
+  .title > p {
+    text-align: center;
+  }
+
+  .google-logo {
+    top: 0;
+    left: 0;
+  }
+
+  .atlassian-logo {
+    top: 0;
+    left: 114px;
+  }
+
+  .asana-logo {
+    top: 0;
+    left: 248px;
+  }
+
+  .paypal-logo {
+    top: 99px;
+    left: 0;
+  }
+
+  .weave-logo {
+    top: 99px;
+    left: 184px;
+  }
+
+  .ads-logo {
+    top: 209px;
+    left: 106px;
+  }
+
+  .calendar-logo {
+    top: 219px;
+    left: 239px;
+  }
+
+  .front-section {
+    padding: 20px 0 60px 0;
+    height: auto;
+  }
+
+  .bullets-list {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+    padding: 0 34px;
+  }
+
+  .bullet {
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .right-wing,
+  .left-wing,
+  #right-wing,
+  #left-wing {
+    display: none;
+  }
+
+  .plansFeaturesList {
+    padding: 0 16px;
+  }
+
+  .rowOne,
+  .rowTwo {
+    flex-direction: column;
+  }
+
+  .planFeatureItem {
+    padding: 20px 0;
+  }
+
+  .hireUs {
+    padding: 0;
+  }
+
+  .hireUsTop {
+    width: 100%;
+  }
+
+  .leftPartHire {
+    flex-direction: column;
+    padding: 40px 16px 20px;
+    text-align: center;
+  }
+
+  p.italicized {
+    text-align: center;
+  }
+
+  .hireUsBottom {
+    width: 100%;
+    align-items: center;
+  }
+
+  .rightPartHire {
+    padding: 30px 16px;
+  }
+
+  .formGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 80px 16px 40px;
+    height: auto;
+  }
+
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footerContact,
+  .footerNav {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footerRight {
+    flex-direction: column;
+    gap: 49px;
+  }
+  .topRow,
+  .bottomRow {
+    flex-direction: column;
+  }
+  .footerTiles {
+    align-items: center;
+    padding: 0;
+  }
+
+  .footerUl-Nav > ul {
+    align-items: center;
+  }
+}
+
+/* Animations */
+
+@media (min-width: 1024px) {
+  @keyframes google-move {
+    0% {
+      opacity: 0%;
+      left: 100%;
+    }
+    50% {
+      opacity: 50%;
+      left: 50%;
+    }
+    100% {
+      opacity: 100%;
+      left: 13.2%;
+    }
+  }
+
+  @keyframes asana-move {
+    0% {
+      opacity: 0%;
+      left: 0%;
+    }
+    50% {
+      opacity: 50%;
+      left: 50%;
+    }
+    100% {
+      opacity: 100%;
+      left: 78%;
+    }
+  }
+
+  @keyframes ads-move {
+    0% {
+      opacity: 0%;
+      left: 100%;
+    }
+    50% {
+      opacity: 50%;
+      left: 50%;
+    }
+    100% {
+      opacity: 100%;
+      left: 32%;
+    }
+  }
+
+  @keyframes weave-move {
+    0% {
+      opacity: 0%;
+      top: 100%;
+    }
+    50% {
+      opacity: 50%;
+      top: 70%;
+    }
+    100% {
+      opacity: 100%;
+      top: 42%;
+    }
+  }
+
+  @keyframes atlassian-move {
+    0% {
+      opacity: 0%;
+      top: 100%;
+    }
+    50% {
+      opacity: 50%;
+      top: 50%;
+    }
+    100% {
+      opacity: 100%;
+      top: 2%;
+    }
+  }
+
+  @keyframes paypal-move {
+    0% {
+      opacity: 0%;
+      top: 100%;
+    }
+    50% {
+      opacity: 50%;
+      top: 70%;
+    }
+    100% {
+      opacity: 100%;
+      top: 42%;
+    }
+  }
+
+  @keyframes calendar-move {
+    0% {
+      opacity: 0%;
+      top: 0%;
+    }
+    50% {
+      opacity: 50%;
+      top: 38%;
+    }
+    100% {
+      opacity: 100%;
+      top: 76%;
+    }
+  }
 }

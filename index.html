@@ -23,7 +23,6 @@
             <img src="/assets/logos/logo-front.svg" alt="Front Logo" />
           </div>
           <nav class="top-nav">
-            <button class="bars"><i class="fa fa-bars"></i></button>
             <ul>
               <li><a href="">Home</a></li>
               <li><a href="">Features</a></li>
@@ -32,6 +31,7 @@
               <li><a href="">Hire Us</a></li>
             </ul>
             <button class="buy-btn">Buy Now</button>
+            <button class="bars"><i class="fa fa-bars"></i></button>
           </nav>
         </div>
       </header>
@@ -42,7 +42,7 @@
             <p>Own the unlimited power of the web development</p>
           </div>
           <div class="top-actions">
-            <button id="play-btn">
+            <button class="play-btn">
               <i class="fa-solid fa-circle-play"></i>
               Play Video
             </button>
@@ -145,7 +145,7 @@
               </p>
             </div>
             <div class="planFooter">
-              <button id="play-btn">
+              <button class="play-btn">
                 <i class="fa-solid fa-circle-play"></i>
                 Play Video
               </button>
@@ -217,7 +217,7 @@
     <section class="content hireUs">
       <div class="leftPartHire">
         <div class="hireUsTop">
-          <div class="hireUsTitle">
+          <div class="hireUsContainer">
             <div class="hireTitle">
               <h2>Hire us</h2>
               <p>Whatever your goal - we will get you there</p>
@@ -242,7 +242,7 @@
         </div>
       </div>
       <div class="rightPartHire">
-        <form action="" method="get" class="form-Hire">
+        <form action="get" method="get" class="form-Hire">
           <div class="formData">
             <h4>Fill out the form and we'll be in touch as soon as possible</h4>
             <div class="formGroup">
@@ -271,14 +271,14 @@
               <div class="checkInput">
                 <input type="checkbox" name="checkbox" id="checkbox" required />
               </div>
-              <label for="checkbox">
+              <div class="promotional">
                 Yes, I'd like to receive occasional marketing emails from Front.
                 I have the right to opt out at any time.
                 <div class="privacyPolicy">
                   <a href="">View privacy policy</a>
                   <a href="">View privacy policy</a>
                 </div>
-              </label>
+              </div>
             </div>
           </div>
           <input type="submit" id="submitForm" value="Submit Form" />
@@ -305,56 +305,61 @@
           </div>
         </div>
         <div class="footerRight">
-          <div class="footerTiles">
-            <h4>Company</h4>
-            <div class="footerUl-Nav">
-              <ul>
-                <li><a href="">About</a></li>
-                <li class="weirdSpan">
-                  <a href="">Career</a><span><a href="">We're Hiring</a></span>
-                </li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Customers</a></li>
-                <li><a href="">Hire Us</a></li>
-              </ul>
+          <div class="topRow">
+            <div class="footerTiles">
+              <h4>Company</h4>
+              <div class="footerUl-Nav">
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li class="weirdSpan">
+                    <a href="">Career</a
+                    ><span><a href="">We're Hiring</a></span>
+                  </li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Customers</a></li>
+                  <li><a href="">Hire Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerTiles">
+              <h4>Features</h4>
+              <div class="footerUl-Nav">
+                <ul>
+                  <li><a href="">Press</a></li>
+                  <li><a href="">Release notes</a></li>
+                  <li><a href="">Integrations</a></li>
+                  <li><a href="">Pricing</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="footerTiles">
-            <h4>Features</h4>
-            <div class="footerUl-Nav">
-              <ul>
-                <li><a href="">Press</a></li>
-                <li><a href="">Release notes</a></li>
-                <li><a href="">Integrations</a></li>
-                <li><a href="">Pricing</a></li>
-              </ul>
+          <div class="bottomRow">
+            <div class="footerTiles">
+              <h4>Documentation</h4>
+              <div class="footerUl-Nav">
+                <ul>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Docs</a></li>
+                  <li><a href="">Status</a></li>
+                  <li><a href="">API Reference</a></li>
+                  <li><a href="">Tech Requirements</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="footerTiles">
-            <h4>Documentation</h4>
-            <div class="footerUl-Nav">
-              <ul>
-                <li><a href="">Support</a></li>
-                <li><a href="">Docs</a></li>
-                <li><a href="">Status</a></li>
-                <li><a href="">API Reference</a></li>
-                <li><a href="">Tech Requirements</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footerTiles">
-            <h4>Resources</h4>
-            <div class="footerUl-Nav">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-info"></i>
-                  <a href="">Help</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-user"></i>
-                  <a href="">Your Account</a>
-                </li>
-              </ul>
+            <div class="footerTiles">
+              <h4>Resources</h4>
+              <div class="footerUl-Nav">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <a href="">Help</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="">Your Account</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
